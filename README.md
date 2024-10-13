@@ -21,7 +21,7 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
 1. Clone the repository:
    ```bash
    
-   git clone https://github.com/yourusername/otp-discord-bot.git
+   git clone https://github.com/NikolisSecurity/OTPGuardian.git
    cd otp-discord-bot
    ```
 2. Install the required dependencies:
