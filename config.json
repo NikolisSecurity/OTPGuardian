@@ -1,0 +1,8 @@
+{
+    "bot_token": "BOT_TOKEN_HERE",
+    "otp_length": 6,
+    "otp_expiration_seconds": 300,
+    "rate_limit_seconds": 60,
+    "command_prefix": "!",
+    "role_id": "MEMBER_ROLE_HERE"
+}
