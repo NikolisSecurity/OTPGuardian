@@ -22,7 +22,7 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
    ```bash
    
    git clone https://github.com/NikolisSecurity/OTPGuardian.git
-   cd otp-discord-bot
+   cd OTPGuardian
    ```
 2. Install the required dependencies:
   ``` bash
