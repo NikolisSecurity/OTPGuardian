@@ -52,7 +52,7 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
   /otp
 ```
 
--Follow the prompts to receive and enter your OTP.
+- Follow the prompts to receive and enter your OTP.
 
 ## 🤝 Contributing
 Feel free to fork the repository, make changes, and submit pull requests. Contributions are welcome!
