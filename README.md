@@ -4,26 +4,28 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
 
 ## ✨ Features
 
-- **🔑 Generate OTP**: Users can generate a One-Time Password via a command.
-- **📬 Send OTP**: Users can receive their OTP in a private message.
-- **✅ Verify OTP**: Users can enter their OTP to gain access to specific roles.
-- **⏳ Rate Limiting**: Users are limited in how frequently they can generate OTPs.
-- **🕒 Expiration**: OTPs expire after a set period for security.
+- **🔑 Generate OTP**: Users can generate a One-Time Password via `!otp` command
+- **📬 Send OTP**: Users can receive their OTP in a private message
+- **✅ Verify OTP**: Users can enter their OTP via modal to gain access to specific roles
+- **⏳ Rate Limiting**: Users are limited in OTP generation frequency (configurable)
+- **🕒 Expiration**: OTPs expire after set time (default: 5 minutes)
+- **🛡️ Secure**: Configurable OTP character set and length
 
 ## 📋 Requirements
 
 - Python 3.8 or higher
 - `discord.py` library (v2.0 or higher)
-- Basic knowledge of Discord bot development
+- Discord bot token with proper permissions
+- Server with configured role for verification
 
 ## 🚀 Installation
 
 1. Clone the repository:
-   ```bash
+  ```bash
    
-   git clone https://github.com/NikolisSecurity/OTPGuardian.git
-   cd OTPGuardian
-   ```
+  git clone https://github.com/NikolisSecurity/OTPGuardian.git
+  cd OTPGuardian
+  ```
 2. Install the required dependencies:
   ``` bash
   pip install -r requirements.txt
@@ -31,12 +33,13 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
 3. Configure your config.json file:
   ```bash
   {
-      "bot_token": "YOUR_BOT_TOKEN",
+      "bot_token": "bot-token",
       "otp_length": 6,
       "otp_expiration_seconds": 300,
       "rate_limit_seconds": 60,
       "command_prefix": "!",
-      "role_id": "YOUR_ROLE_ID"
+      "role_id": "role-id"
+      "otp_characters": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   }
   ```
 
@@ -49,7 +52,7 @@ A simple and secure Discord bot that generates and verifies One-Time Passwords (
 
 - Use the command to generate an OTP:
 ```bash
-  /otp
+  !otp
 ```
 
 - Follow the prompts to receive and enter your OTP.
